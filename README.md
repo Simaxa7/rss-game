@@ -1,1 +1,1 @@
-# rss-game
+# https://simaxa7.github.io/rss-game/
