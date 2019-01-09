@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const path = require('path');
 const mongojs = require('mongojs');
+const localhost = 8080;
 
 const app = express();
 let db;
@@ -42,7 +43,7 @@ MongoClient.connect('mongodb://Simaxa7:8agAXnXgs6cuy3b@ds121889.mlab.com:21889/r
     return console.log(err);
   }
   db = database;
-  app.listen(8080, () => {
-    console.log("server started");
+  app.listen(localhost, () => {
+    console.log("server started on localhost:" localhost);
   });
 });
